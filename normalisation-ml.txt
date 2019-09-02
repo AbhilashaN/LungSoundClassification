@@ -1,0 +1,4 @@
+scaler = preprocessing.StandardScaler()
+scaler = preprocessing.StandardScaler().fit(X_train)
+scaler.transform(X_train)
+scaler.transform(X_test)
