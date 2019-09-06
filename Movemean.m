@@ -2,6 +2,7 @@
 order    = 6;
 fcutlow  = 150;
 fcuthigh = 1500;
+%butterworth filter
 [b,a]    = butter(order,[fcutlow,fcuthigh]/(fs1/2), 'bandpass');
 x        = filter(b,a,s); % filtered signal
 % 

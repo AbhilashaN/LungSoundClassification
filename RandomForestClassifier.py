@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[160]:
-
+#import necessary libraries
 
 from sklearn.model_selection import train_test_split
 
@@ -38,7 +38,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 # In[166]:
-
+#read the file where data is stored
 
 dataset = pd.read_csv("C:\Users\hp 1\Desktop\ML\Dataset5Features.csv")
 
@@ -81,7 +81,7 @@ model = RandomForestClassifier(random_state=55)
 
 # In[231]:
 
-
+#train data
 model.fit(X_train,y_train)
 
 
@@ -93,6 +93,6 @@ y_pred = model.predict(X_test)
 
 # In[233]:
 
-
+#compute accuracy
 print ('Accuracy is- ', accuracy_score(y_test,y_pred)*100)
 
